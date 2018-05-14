@@ -60,9 +60,9 @@ var Counter = React.createClass({
                 );
    	}
 
-
 });
-
 var element = React.createElement(Counter);
-ReactDOM.render(element, document.getElementById('app'));
-ReactDOM.render(element, document.getElementById('counter'));
+var element2 = React.createElement(Counter);
+
+var app = React.createElement('div', {}, element, element2);
+ReactDOM.render(app, document.getElementById('app'));
